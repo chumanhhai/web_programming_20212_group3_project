@@ -1,0 +1,92 @@
+.Profile {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    flex-wrap: wrap;
+    .profile {
+        padding: 20px;
+        border: 1px solid $colorBorder;
+        width: 30%;
+        .wrapper {
+            margin: 20px 0;
+            .title {
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+            .fieldInput {
+                padding: 7px 0;
+                border: none;
+                border-bottom: 1px solid $colorBorder;
+                width: 100%;
+                font-weight: bold;
+            }
+            .fieldInput:focus {
+                outline: none;
+                border-bottom-color: $colorYellowMain;
+            }
+        }
+        .avatarWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .avatar {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 1px solid $colorYellowMain;
+                object-fit: cover;
+                object-position: center;
+                margin-bottom: 10px;
+            }
+            .avatarInput {
+                display: none;
+            }
+            .hint {
+                font-size: 12px;
+            }
+        }
+        .btnUpdate {
+            width: 100%;
+            padding: 14px;
+        }
+    }
+
+    // ---------------------- order history ------------------
+
+    .orderHistory {
+        width: 60%;
+        table {
+            width: 100%;
+        }
+        table, tr, td {
+            border: 1px solid $colorBorder;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+        }
+        .title {
+            font-weight: bold;
+        }
+        .btnDetail {
+            display: flex;
+            width: fit-content;
+            margin: auto;
+            padding: 5px;
+            border: 1px solid $colorBorder;
+            background-color: $colorGreyLight;
+        }
+    }
+
+    @media screen and (max-width: 770px) {
+        justify-content: center;
+        .profile {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .orderHistory {
+            width: 100%;
+        }
+    }
+}

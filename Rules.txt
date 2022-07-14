@@ -1,0 +1,10 @@
+GitFlow rules:
+- Tạo branch của riêng mình
+- Chỉ được push code lên branch của mình
+- Muốn được merge vào branch main thì phải tạo  pull request,
+  thông báo lên nhóm để mọi người review code,mọi ng ok thì mới được merge
+- Chỉ được merge code đã chạy được vào main
+- Commit message phải có ý nghĩa, nói ngắn gọn mình update cái j,
+  hay fix cái j (không được ghi như kiểu "fix bug")
+- Khi tạo pull request thì phải ghi tóm tắt là update những tính năng j
+  để người review dễ kiểm tra hơn

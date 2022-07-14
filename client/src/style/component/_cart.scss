@@ -1,0 +1,94 @@
+.Cart {
+    padding: 30px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .items {
+        width: 70%;
+        .header {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 20px 0px;
+            color: #007185;
+        }
+    
+        .itemWrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            align-items: center;
+            padding: 15px;
+            border-top: 1px solid $colorBorder;
+            img {
+                width: 50px;
+                height:70px;
+            }
+            .itemInfoWrapper {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                .name {
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #007185;
+                    margin-bottom: 20px;
+                }
+                .itemInfoWrapperBottom {
+                    display: flex;
+                    align-items: center;
+                    select {
+                        margin-right: 30px;
+                        padding: 3px;
+                        border-radius: 5px;
+                    }
+                    .cost {
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .btnDelete {
+                padding: 10px;
+            }
+        }
+    }
+
+    .payment {
+        width: 20%;
+        padding: 20px;
+        border: 1px solid $colorBorder;
+        font-size: 16px;
+        border-radius: 5px;
+        background-color: $colorGreyLight;
+        margin-top: 30px;
+
+        .numberOfItems, .totalCost {
+            margin-bottom: 20px;
+            span {
+                font-weight: bold;
+            }
+        }
+
+        .btnPayment {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 770px) {
+        box-sizing: border-box;
+        padding: 10px;
+        width: 100%;
+        justify-content: center;
+        .items {
+            width: 80%;
+        }
+        .payment {
+            width: 80%;
+        }
+    }
+}

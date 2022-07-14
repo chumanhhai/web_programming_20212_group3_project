@@ -1,0 +1,87 @@
+.CreateAndUpdateProduct {
+    width: 60%;
+    margin: auto;
+    form {
+        margin-top: 100px;
+        padding: 20px;
+        border: 1px solid $colorBorder;
+        border-radius: 5px;
+        .title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+        .field, .cost, .category {
+            padding: 7px;
+            border: 1px solid $colorBorder;
+            border-radius: 5px;
+        }
+        .field {
+            width: 100%;
+        }
+        .field:focus {
+            outline: none;
+        }
+        .fullDescription {
+            width: 100%;
+            height: 70px;
+            resize: none;
+            word-break: break-all;
+        }
+        .costAndCategoryWrapper {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 0;
+            .costWrapper {
+                margin-right: 30px;
+                margin-top: 20px;
+            }
+            .categoryWrapper {
+                margin-top: 20px;
+            }
+        }
+        .imageWrapper {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            .image {
+                height: 300px;
+                width: 200px;
+                margin-right: 20px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        .buttonWrapper {
+            width: 100%;
+            display: flex;
+            .btnCancel, .btnRemove {
+                margin-right: 20px;
+            }
+            .btnSubmit {
+                padding: 10px;
+            }
+            .removeAndSubmitWrapper {
+                display: flex;
+            }
+        }
+        .buttonWrapperCreate {
+            justify-content: flex-end;
+        }
+        .buttonWrapperUpdate {
+            justify-content: space-between;
+        }
+
+    }
+
+    form > * {
+        margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 900px) {
+        width: 90%;
+        form {
+            margin-top: 50px;
+        }
+    }
+}

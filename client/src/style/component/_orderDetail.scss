@@ -1,0 +1,77 @@
+.OrderDetail {
+    .main {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        .items {
+            width: 60%;
+            .item {
+                display: flex;
+                padding: 10px;
+                width: 100%;
+                justify-content: space-between;
+                border: 1px solid $colorBorder;
+                border-radius: 5px;
+                margin-bottom: 20px;
+                .image {
+                    height: 70px;
+                    width: 70px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+                .infoWrapper {
+                    width: 60%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .name {
+                        font-size: 24px;
+                        font-weight: bold;
+                    }
+                    .nonName {
+                        font-size: 14px;
+                    }
+                    .fieldValue {
+                        font-weight: bold;
+                        margin-right: 30px;
+                    }
+                }
+                .totalCost {
+                    font-weight: bold;
+                }
+            }
+        }
+        .summary {
+            width: 35%;
+            border: 1px solid $colorBorder;
+            border-radius: 5px;
+            padding: 15px;
+            .header {
+                font-weight: bold;
+                font-size: 24px;
+            }
+            .element {
+                margin-bottom: 20px;
+            }
+            .fieldValue {
+                font-weight: bold;
+            }
+            .btnBack {
+                width: 100%;
+                padding: 14px;
+            }
+        }
+        
+        @media screen and (max-width: 660px) {
+            .items, .summary {
+                width: 100%;
+            }
+
+            .summary {
+                margin-top: 20px;
+            }
+        }
+    }
+}

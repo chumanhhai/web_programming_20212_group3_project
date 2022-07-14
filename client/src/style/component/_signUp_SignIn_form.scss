@@ -1,0 +1,76 @@
+.SignUpForm, .LoginForm {
+    display: inline-block;
+    background-color: $colorWhite;
+    border-radius: 10px;
+
+    form {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .header, .fieldWrapper, .btnContinue {
+        margin-bottom: 15px;
+    }
+
+    .header {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .fieldWrapper {
+        .title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+
+        input {
+            padding: 7px;
+            border-radius: 5px;
+            width: 300px;
+            border: 1px solid $colorBorder;
+        }
+
+        input:focus {
+            outline: none;
+            box-shadow: 0 0 10px $colorYellowMain;
+            border-color: $colorYellowMain;
+        }
+    
+    }
+
+    .btn {
+        padding: 8px;
+        border-radius: 5px;
+        width: 100%;
+        border: 1px solid $colorBorder;
+    }
+
+    .btn:hover {
+        border: 1px solid $colorYellowMain;
+        cursor: pointer;
+    }
+
+    .btnContinue {
+        background-color: $colorYellowMain;
+    }
+
+    .break {
+        border: 1px solid $colorBorder;
+        margin: 20px 0;
+    }
+
+    .btnAsWhat {
+        background-color: $colorGreyLight;
+    }
+
+    .signWhat {
+        font-size: 14px;
+        
+        .signWhatOption {
+            margin-left: 10px;
+            color: #0066c0;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,142 @@
+.Checkout {
+    background-image: url("http://file.hstatic.net/200000198279/file/banner_web_desktop-02_d30afa6836344bb682912b86d244c70b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+
+
+    .container {
+        padding: 20px;
+        background-color: $colorWhite;
+        border: 1px solid $colorBorder;
+        border-radius: 5px;
+        box-sizing: border-box;
+
+        .element {
+            margin: 20px 0;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .header {
+            text-align: center;
+            font-weight: bold;
+            font-size: 28px;
+            margin: 10px 0;
+        }
+
+        .processWrapper {
+            display: flex;
+            align-items: center;
+            .element {
+                margin: 0 3px;
+            }
+            .checkIcon, .twoIcon {
+                border-radius: 50%;
+                color: $colorWhite;
+                height: 20px;
+                width: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .checkIcon {
+                background-color: $colorYellowMain;
+            }
+            .twoIcon {
+                background-color: $colorBorder;
+            }
+            .processBreak {
+                width: 300px;
+                border: 0.5px solid $colorYellowMain;
+            }
+
+            @media screen and (max-width: 660px) {
+                .processBreak {
+                    width: 100px;
+                }
+            }
+        }
+
+        .item {
+            .itemName {
+                font-size: 17px;
+                margin-bottom: 5px;
+            }
+            .itemBottom {
+                display: flex;
+                justify-content: space-between;
+                color: $colorBorder;
+            }
+        }
+
+        .totalCostWrapper {
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            .totalCost {
+                font-weight: bold;
+            }
+            .total {
+                font-weight: bold;
+            }
+        }
+
+        .paymentBreak {
+            width: 100%;
+            border: 1px solid $colorGreyLight;
+        }
+
+        form {
+            input {
+                padding: 7px;
+                border: none;
+                border-bottom: 1px solid $colorBorder;
+                margin-bottom: 10px;
+                width: 100%;
+            }
+            input:focus {
+                outline: none;
+                border-bottom-color: $colorYellowMain;
+            }
+        }
+
+        .buttonWrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            padding: 10px 20px;
+        }
+
+        .backButton {
+            border: 1px solid $colorBorder;
+            border-radius: 5px;
+            background-color: $colorWhite;
+        }
+
+
+        // --------------------------- result component ------------------------------
+        .resultText {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 50px 0;
+        }
+
+        .successText {
+            color: green;
+        }
+
+        .failureText {
+            color: red;
+        }
+    }
+}

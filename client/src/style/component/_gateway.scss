@@ -1,0 +1,25 @@
+.Gateway {
+    position: relative;
+    background-image: url("http://file.hstatic.net/200000198279/file/banner_web_desktop-02_d30afa6836344bb682912b86d244c70b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    .wrapper {
+        display: inline-block;
+        position: absolute;
+        top: 100px;
+        right: 200px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .Gateway .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: initial;
+    }
+}

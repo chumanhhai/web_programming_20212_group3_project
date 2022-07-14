@@ -1,0 +1,121 @@
+.ProductDetail {
+    padding: 30px 30px;
+    display: flex;
+    align-items: flex-start;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+
+    .mainImage {
+        width: 35%;
+    }
+
+    .info {
+        width: 25%;
+        margin: 0 30px 0 80px;
+        .name {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: $colorNavbar;
+            font-weight: bolder;
+        }
+        .descriptionWrapper, .supplierNameWrapper {
+            margin-bottom: 20px;
+        }
+        .descriptionText, .supplierNameText {
+            margin-right: 10px;
+        }
+        .descriptionContent, .supplierNameContent, .name {
+            overflow-wrap: break-word;
+        }
+        .supplierNameContent {
+            font-weight: bold;
+            color: $colorYellowMain;
+            cursor: pointer;
+        }
+        .thumbnailContentWrapper {
+            display: flex;
+            flex-wrap: wrap;
+            img {
+                width: 50px;
+                height: 61px;
+                padding: 10px;
+                margin: 10px;
+                border: 1px solid $colorBorder
+            }
+            .imageSelected {
+                box-shadow: 0 0 10px $colorYellowMain;
+                border: 1px solid $colorYellowMain;
+            }
+        }
+    }
+
+    .card {
+        width:  20%;
+        border: 1px solid $colorBorder;
+        border-radius: 5px;
+        padding: 20px;
+        font-weight: 600;
+        background-color: $colorGreyLight;
+        .priceWrapper, .statusWrapper, .qtyWrapper {
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .qtyWrapper {
+            select {
+                padding: 5px;
+                border-radius: 5px;
+            }
+        }
+
+        .btnAddToCart {
+            width: 100%;
+            background-color: $colorYellowMain;
+            padding: 16px;
+            border-radius: 5px;
+            font-size: 16px;
+            border: 1px solid $colorBorder;
+            cursor: pointer;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .ProductDetail {
+        justify-content: center;
+    }
+
+    .ProductDetail .mainImage {
+        width: 70%;
+        max-width: 100%;
+        margin: auto;
+    }
+    .ProductDetail .info {
+        width: 40%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .ProductDetail .card {
+        width: 40%;
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .ProductDetail {
+        padding: 5px;
+        width: 100%;
+    }
+
+    .ProductDetail .info {
+        width: 80%;
+    }
+
+    .ProductDetail .card {
+        width: 80%;
+    }
+}
