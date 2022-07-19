@@ -2,8 +2,8 @@ import { useSelector, useDispatch  } from "react-redux"
 import Loading from "react-loading"
 import { useState, useEffect } from "react"
 import { useHistory } from "react-router-dom"
-import { saveCart } from "../src/redux/action/cartAction"
-import cartAPI from "../src/network/cart"
+import { saveCart } from "../redux/action/cartAction"
+import cartAPI from "../network/cart"
 
 const Cart = () => {
 

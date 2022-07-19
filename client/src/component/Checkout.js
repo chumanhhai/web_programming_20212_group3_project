@@ -4,8 +4,8 @@ import { useState, useEffect } from "react"
 import { useSelector, useDispatch } from "react-redux"
 import { useHistory } from "react-router-dom"
 import { v4 as uuid } from "uuid"
-import orderAPI from "../src/network/order"
-import { saveCart } from "../src/redux/action/cartAction"
+import orderAPI from "../network/order"
+import { saveCart } from "../redux/action/cartAction"
 
 const Checkout = () => {
 

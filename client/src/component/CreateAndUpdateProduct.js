@@ -2,10 +2,10 @@ import Loading from "react-loading"
 import { useState, useEffect } from "react"
 import { useHistory, useParams } from "react-router-dom"
 import { useSelector, useDispatch } from "react-redux"
-import productAPI from "../src/network/product"
-import imageAPI from "../src/network/image"
+import productAPI from "../network/product"
+import imageAPI from "../network/image"
 import { v4 as uuid } from "uuid"
-import { saveAllProducts } from "../src/redux/action/allProductsAction"
+import { saveAllProducts } from "../redux/action/allProductsAction"
 
 const CreateAndUpdateProduct = () => {
 

@@ -1,11 +1,11 @@
 import {useState} from "react"
-import customerAPI from "../src/network/customer"
-import supplierAPI from "../src/network/supplier"
+import customerAPI from "../network/customer"
+import supplierAPI from "../network/supplier"
 import {useHistory} from "react-router-dom"
 import {useDispatch} from "react-redux"
-import {saveUser} from "../src/redux/action/userAction"
-import {saveCart} from "../src/redux/action/cartAction"
-import {saveAllProducts} from "../src/redux/action/allProductsAction"
+import {saveUser} from "../redux/action/userAction"
+import {saveCart} from "../redux/action/cartAction"
+import {saveAllProducts} from "../redux/action/allProductsAction"
 
 const LoginForm = (props) => {
     const {isCustomer, signUpOptionHandler, joinAsWhatHandler} = props
